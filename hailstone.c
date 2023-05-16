@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 
 int main()
 {
   int length = 1;
   int num = 38;
+  
+  printf("%d ", num);
   
   while(num != 1)
   {
@@ -17,11 +18,11 @@ int main()
     {
       num = num/2;
     }
-    printf(num);
-    length++
+    printf("%d ", num);
+    length++;
   }
   
-  printf(length);
+  printf("Sequence length: %d ", length);
   
-  return(0);
+  return 0;
 }
